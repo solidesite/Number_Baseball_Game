@@ -29,8 +29,9 @@ public class Main {
 			if (count == 0) {
 				System.out.println("맞추지 못했습니다. 정답은");
 				for (int i = 0; i < nums.length; i++) {
-					System.out.println(nums[i]);
+					System.out.print(nums[i]);
 				}
+				System.out.println("입니다.");
 				break;
 			}
 			System.out.println("남은 기회 : " + count + "번");
@@ -68,6 +69,8 @@ public class Main {
 				System.out.println("축하합니다. 모두 맞췄습니다.");
 				break;
 			}
+			ball = 0;
+			strike = 0;
 			count--;
 		}
 
